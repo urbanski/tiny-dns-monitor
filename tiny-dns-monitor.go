@@ -61,6 +61,24 @@ func main() {
 									string_type = "A"
 								case layers.DNSTypeNS:
 									string_type = "NS"
+								case layers.DNSTypeMD:
+									string_type = "MD"
+								case layers.DNSTypeMF:
+									string_type = "MF"
+								case layers.DNSTypeCNAME:
+									string_type = "CNAME"
+								case layers.DNSTypeSOA:
+									string_type = "SOA"
+								case layers.DNSTypeMB:
+									string_type = "MB"
+								case layers.DNSTypeMX:
+									string_type = "MX"
+								case layers.DNSTypeTXT:
+									string_type = "TXT"
+								case layers.DNSTypeAAAA:
+									string_type = "AAAA"
+								case layers.DNSTypeSRV:
+									string_type = "SRV"
 							}
 
 							t := time.Now()
